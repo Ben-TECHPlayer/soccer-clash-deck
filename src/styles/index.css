@@ -1,0 +1,33 @@
+html {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Définir notre police */
+    font-family: "Samsung Sharp Sans", "Segoe UI", sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0px;
+    padding: 0px 10px;
+}
+
+main{
+    flex-grow: 1;
+}
+
+footer{
+    padding: 10px;
+}
+
+/* Enlever les soulignures étranges */
+a {
+    text-decoration: none !important;
+}
