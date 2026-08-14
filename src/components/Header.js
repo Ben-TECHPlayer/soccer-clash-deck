@@ -104,15 +104,15 @@ function Header() {
                                 </button>
 
                                 <div className={`submenu ${boutonCardsOpen ? 'open' : ''}`}>
-                                    <NavLink to="/card/germany" className={({ isActive }) => isActive ? "active" : ""}>Germany</NavLink>
-                                    <NavLink to="/card/argentine" className={({ isActive }) => isActive ? "active" : ""}>Argentine</NavLink>
-                                    <NavLink to="/card/portugal" className={({ isActive }) => isActive ? "active" : ""}>Portugal</NavLink>
-                                    <NavLink to="/card/france" className={({ isActive }) => isActive ? "active" : ""}>France</NavLink>
-                                    <NavLink to="/card/spain" className={({ isActive }) => isActive ? "active" : ""}>Spain</NavLink>
-                                    <NavLink to="/card/brazil" className={({ isActive }) => isActive ? "active" : ""}>Brazil</NavLink>
-                                    <NavLink to="/card/england" className={({ isActive }) => isActive ? "active" : ""}>England</NavLink>
-                                    <NavLink to="/card/united-states" className={({ isActive }) => isActive ? "active" : ""}>United States</NavLink>
-                                    <NavLink to="/card/mexico" className={({ isActive }) => isActive ? "active" : ""}>Mexico</NavLink>
+                                    <NavLink to="/card/attributes/germany" className={({ isActive }) => isActive ? "active" : ""}>Germany</NavLink>
+                                    <NavLink to="/card/attributes/argentine" className={({ isActive }) => isActive ? "active" : ""}>Argentine</NavLink>
+                                    <NavLink to="/card/attributes/portugal" className={({ isActive }) => isActive ? "active" : ""}>Portugal</NavLink>
+                                    <NavLink to="/card/attributes/france" className={({ isActive }) => isActive ? "active" : ""}>France</NavLink>
+                                    <NavLink to="/card/attributes/spain" className={({ isActive }) => isActive ? "active" : ""}>Spain</NavLink>
+                                    <NavLink to="/card/attributes/brazil" className={({ isActive }) => isActive ? "active" : ""}>Brazil</NavLink>
+                                    <NavLink to="/card/attributes/england" className={({ isActive }) => isActive ? "active" : ""}>England</NavLink>
+                                    <NavLink to="/card/attributes/united-states" className={({ isActive }) => isActive ? "active" : ""}>United States</NavLink>
+                                    <NavLink to="/card/attributes/mexico" className={({ isActive }) => isActive ? "active" : ""}>Mexico</NavLink>
                                 </div>
                             </div>
                             
