@@ -22,7 +22,7 @@ function App() {
                 {/* Ajouter nos pages d'équipes */}
                 <Routes>
                     <Route path="/card/teams/database/portugal" element={<Portugal />} />
-                    {/* <Route path="/card/teams/database/brazil" element={<Brazil />} />
+                    <Route path="/card/teams/database/brazil" element={<Brazil />} />
                     <Route path="/card/teams/database/france" element={<France />} />
                     <Route path="/card/teams/database/argentine" element={<Argentine />} />
                     <Route path="/card/teams/database/spain" element={<Spain />} />
@@ -30,7 +30,7 @@ function App() {
                     <Route path="/card/teams/database/england" element={<England />} />
                     <Route path="/card/teams/database/united-states" element={<UnitedStates />} />
                     <Route path="/card/teams/database/mexico" element={<Mexico />} />
-                    <Route path="/card/teams/database/norway" element={<Norway />} /> */}
+                    <Route path="/card/teams/database/norway" element={<Norway />} />
                 </Routes>
                 {/* Ajouter notre footer contenant nos contacts */}
                 <Footer/>
