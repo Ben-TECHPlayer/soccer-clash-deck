@@ -105,7 +105,7 @@ function Header() {
 
                                 <div className={`submenu ${boutonCardsOpen ? 'open' : ''}`}>
                                     <NavLink to="/card/teams/database/portugal" className={({ isActive }) => isActive ? "active" : ""}>Portugal</NavLink>
-                                    {/* <NavLink to="/card/teams/database/germany" className={({ isActive }) => isActive ? "active" : ""}>Germany</NavLink>
+                                    <NavLink to="/card/teams/database/germany" className={({ isActive }) => isActive ? "active" : ""}>Germany</NavLink>
                                     <NavLink to="/card/teams/database/argentine" className={({ isActive }) => isActive ? "active" : ""}>Argentine</NavLink>
                                     <NavLink to="/card/teams/database/france" className={({ isActive }) => isActive ? "active" : ""}>France</NavLink>
                                     <NavLink to="/card/teams/database/spain" className={({ isActive }) => isActive ? "active" : ""}>Spain</NavLink>
@@ -113,7 +113,7 @@ function Header() {
                                     <NavLink to="/card/teams/database/england" className={({ isActive }) => isActive ? "active" : ""}>England</NavLink>
                                     <NavLink to="/card/teams/database/united-states" className={({ isActive }) => isActive ? "active" : ""}>United States</NavLink>
                                     <NavLink to="/card/teams/database/mexico" className={({ isActive }) => isActive ? "active" : ""}>Mexico</NavLink>
-                                    <NavLink to="/card/teams/database/norway" className={({ isActive }) => isActive ? "active" : ""}>Norway</NavLink> */}
+                                    <NavLink to="/card/teams/database/norway" className={({ isActive }) => isActive ? "active" : ""}>Norway</NavLink>
                                 </div>
                             </div>
                             

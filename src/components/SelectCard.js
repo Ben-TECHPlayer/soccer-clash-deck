@@ -10,7 +10,7 @@ function SelectCard({ setSelectedCardTable, selectedCardTable, showLevels=false,
         // sur la page Lineup (où l'état est initialisé à null) et pas sur la page Card
         // (où la prop est undefined et où on ne veut pas déclencher de navigation auto).
         if (selectedCardTable === null) {
-            setSelectedCardTable("osaka-table", "players/legends/database/Osaka");
+            setSelectedCardTable("portugal-table", "card/teams/database/portugal");
         }
     }, []);
 
@@ -68,43 +68,43 @@ function SelectCard({ setSelectedCardTable, selectedCardTable, showLevels=false,
 
     return(
         <div className="cards-container" style={{marginTop: "2rem"}}>
-            <div onClick={() => setSelectedCardTable("portugal-table", "teams/database/portugal")} style={{ color: selectedCardTable === "portugal-table" ? '#007bff' : 'black' }}>
+            <div onClick={() => setSelectedCardTable("portugal-table", "card/teams/database/portugal")} style={{ color: selectedCardTable === "portugal-table" ? '#007bff' : 'black' }}>
                 <img src={`${process.env.PUBLIC_URL}/assets/teams-characters/portugal-team.svg`} alt="Portugal" />
                 <p>{displayName("Portugal", "teams/database/portugal")}</p>
             </div>
-            <div onClick={() => setSelectedCardTable("brazil-table", "teams/database/brazil")} style={{ color: selectedCardTable === "brazil-table" ? '#007bff' : 'black' }}>
+            <div onClick={() => setSelectedCardTable("brazil-table", "card/teams/database/brazil")} style={{ color: selectedCardTable === "brazil-table" ? '#007bff' : 'black' }}>
                 <img src={`${process.env.PUBLIC_URL}/assets/teams-characters/brazil-team.svg`} alt="Brazil" />
                 <p>{displayName("Brazil", "teams/database/brazil")}</p>
             </div>
-            <div onClick={() => setSelectedCardTable("france-table", "teams/database/france")} style={{ color: selectedCardTable === "france-table" ? '#007bff' : 'black' }}>
+            <div onClick={() => setSelectedCardTable("france-table", "card/teams/database/france")} style={{ color: selectedCardTable === "france-table" ? '#007bff' : 'black' }}>
                 <img src={`${process.env.PUBLIC_URL}/assets/teams-characters/france-team.svg`} alt="France" />
                 <p>{displayName("France", "teams/database/france")}</p>
             </div>
-            <div onClick={() => setSelectedCardTable("argentine-table", "teams/database/argentine")} style={{ color: selectedCardTable === "argentine-table" ? '#007bff' : 'black' }}>
+            <div onClick={() => setSelectedCardTable("argentine-table", "card/teams/database/argentine")} style={{ color: selectedCardTable === "argentine-table" ? '#007bff' : 'black' }}>
                 <img src={`${process.env.PUBLIC_URL}/assets/argentine-team.svg`} alt="Argentine" />
                 <p>{displayName("Argentine", "teams/database/argentine")}</p>
             </div>
-            <div onClick={() => setSelectedCardTable("spain-table", "teams/database/spain")} style={{ color: selectedCardTable === "spain-table" ? '#007bff' : 'black' }}>
+            <div onClick={() => setSelectedCardTable("spain-table", "card/teams/database/spain")} style={{ color: selectedCardTable === "spain-table" ? '#007bff' : 'black' }}>
                 <img src={`${process.env.PUBLIC_URL}/assets/teams-characters/spain-team.svg`} alt="Spain" />
                 <p>{displayName("Spain", "teams/database/spain")}</p>
             </div>
-            <div onClick={() => setSelectedCardTable("germany-table", "teams/database/germany")} style={{ color: selectedCardTable === "germany-table" ? '#007bff' : 'black' }}>
+            <div onClick={() => setSelectedCardTable("germany-table", "card/teams/database/germany")} style={{ color: selectedCardTable === "germany-table" ? '#007bff' : 'black' }}>
                 <img src={`${process.env.PUBLIC_URL}/assets/teams-characters/germany-team.svg`} alt="Germany" />
                 <p>{displayName("Germany", "teams/database/germany")}</p>
             </div>
-            <div onClick={() => setSelectedCardTable("england-table", "teams/database/england")} style={{ color: selectedCardTable === "england-table" ? '#007bff' : 'black' }}>
+            <div onClick={() => setSelectedCardTable("england-table", "card/teams/database/england")} style={{ color: selectedCardTable === "england-table" ? '#007bff' : 'black' }}>
                 <img src={`${process.env.PUBLIC_URL}/assets/teams-characters/england-team.svg`} alt="England" />
                 <p>{displayName("England", "teams/database/england")}</p>
             </div>
-            <div onClick={() => setSelectedCardTable("united-states-table", "teams/database/united-states")} style={{ color: selectedCardTable === "united-states-table" ? '#007bff' : 'black' }}>
+            <div onClick={() => setSelectedCardTable("united-states-table", "card/teams/database/united-states")} style={{ color: selectedCardTable === "united-states-table" ? '#007bff' : 'black' }}>
                 <img src={`${process.env.PUBLIC_URL}/assets/teams-characters/united-states-team.svg`} alt="United States" />
                 <p>{displayName("UnitedStates", "teams/database/united-states")}</p>
             </div>
-            <div onClick={() => setSelectedCardTable("mexico-table", "teams/database/mexico")} style={{ color: selectedCardTable === "mexico-table" ? '#007bff' : 'black' }}>
+            <div onClick={() => setSelectedCardTable("mexico-table", "card/teams/database/mexico")} style={{ color: selectedCardTable === "mexico-table" ? '#007bff' : 'black' }}>
                 <img src={`${process.env.PUBLIC_URL}/assets/teams-characters/mexico-team.svg`} alt="Mexico" />
                 <p>{displayName("Mexico", "teams/database/mexico")}</p>
             </div>
-            <div onClick={() => setSelectedCardTable("norway-table", "teams/database/norway")} style={{ color: selectedCardTable === "norway-table" ? '#007bff' : 'black' }}>
+            <div onClick={() => setSelectedCardTable("norway-table", "card/teams/database/norway")} style={{ color: selectedCardTable === "norway-table" ? '#007bff' : 'black' }}>
                 <img src={`${process.env.PUBLIC_URL}/assets/teams-characters/norway-team.svg`} alt="Norway" />
                 <p>{displayName("Norway", "teams/database/norway")}</p>
             </div>

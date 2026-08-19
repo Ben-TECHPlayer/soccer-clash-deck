@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
+import "../../../styles/Card.css";
+
 function Portugal(){
     return(
         <div className="item-container">
@@ -10,8 +12,10 @@ function Portugal(){
                 <p>Portugal</p>
                 <div className="infos-card">
                     <p>Compétences : </p>
-                    <p>Powerful shot</p>
-                    <p>Hidden</p>
+                    <ul>
+                        <li>Powerful shot</li>
+                        <li>Hidden</li>
+                    </ul>
                     <div className="nationality">
                         {/* <img src={`${process.env.PUBLIC_URL}/assets/teams-flag/portugal-team.svg`} alt="Portugal" /> */}
                         <img className="flag" src={`${process.env.PUBLIC_URL}/assets/teams-flag/japan.svg`} alt="Japan"/>
@@ -22,7 +26,7 @@ function Portugal(){
             <div className="table-container-scrollable">
                 <div className="table-container">
                     <table className="portugal">
-                        <caption>Potugal's Upgrade Table</caption>
+                        <caption>Upgrade Table</caption>
                         <thead>
                             <tr>
                                 <th>Level</th>
@@ -43,28 +47,28 @@ function Portugal(){
                             <tr>
                                 <td>Up Cards</td>
                                 <td></td>
-                                <td>2</td>
-                                <td>3</td>
-                                <td>4</td>
-                                <td>5</td>
-                                <td>8</td>
-                                <td>10</td>
                                 <td>20</td>
-                                <td>40</td>
+                                <td>30</td>
+                                <td>50</td>
+                                <td>85</td>
+                                <td>140</td>
+                                <td>220</td>
+                                <td>355</td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                             </tr>
                             <tr>
                                 <td>Price Upgrade</td>
                                 <td></td>
-                                <td>6K</td>
-                                <td>11K</td>
-                                <td>36K</td>
-                                <td>52K</td>
-                                <td>140K</td>
-                                <td>180K</td>
-                                <td>440K</td>
-                                <td>520K</td>
+                                <td>220</td>
+                                <td>390</td>
+                                <td>830</td>
+                                <td>1540</td>
+                                <td>3190</td>
+                                <td>5270</td>
+                                <td>8780</td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                             </tr>
@@ -72,8 +76,8 @@ function Portugal(){
                     </table>
                 </div>
                 <div className="table-container">
-                    <table className="osaka">
-                        <caption>Osaka's Skills Table</caption>
+                    <table className="portugal">
+                        <caption>Skills Table</caption>
                         <thead>
                             <tr>
                                 <th>Level</th>
@@ -92,73 +96,73 @@ function Portugal(){
                         </thead>
                         <tbody>
                             <tr>
+                                <td>Strike Power</td>
+                                <td>36</td>
+                                <td>40</td>
+                                <td>43</td>
+                                <td>47</td>
+                                <td>50</td>
+                                <td>54</td>
+                                <td>58</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>72</td>
+                            </tr>
+                            <tr>
                                 <td>Agility</td>
-                                <td>4</td>
-                                <td>6</td>
-                                <td>7</td>
-                                <td>9</td>
-                                <td>10</td>
-                                <td>12</td>
-                                <td>14</td>
-                                <td>15</td>
+                                <td>30</td>
+                                <td>33</td>
+                                <td>36</td>
+                                <td>39</td>
+                                <td>42</td>
+                                <td>45</td>
+                                <td>48</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                            </tr>
-                            <tr>
-                                <td>Stamina</td>
-                                <td>5</td>
-                                <td>6</td>
-                                <td>7</td>
-                                <td>8</td>
-                                <td>9</td>
-                                <td>10</td>
-                                <td>11</td>
-                                <td>12</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Serve</td>
-                                <td>4</td>
-                                <td>5</td>
-                                <td>6</td>
-                                <td>7</td>
-                                <td>8</td>
-                                <td>9</td>
-                                <td>10</td>
-                                <td>11</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>60</td>
                             </tr>
                             <tr>
                                 <td>Volley</td>
-                                <td>2</td>
-                                <td>3</td>
-                                <td>4</td>
-                                <td>5</td>
-                                <td>5</td>
-                                <td>6</td>
-                                <td>7</td>
-                                <td>8</td>
+                                <td>35</td>
+                                <td>38</td>
+                                <td>42</td>
+                                <td>45</td>
+                                <td>49</td>
+                                <td>53</td>
+                                <td>56</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td>70</td>
+                            </tr>
+                            <tr>
+                                <td>Stamina</td>
+                                <td>31</td>
+                                <td>34</td>
+                                <td>37</td>
+                                <td>40</td>
+                                <td>43</td>
+                                <td>46</td>
+                                <td>49</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>61</td>
                             </tr>
                         </tbody>
                         <tfoot>
                             <tr>
                                 <th>Total Power</th>
-                                <th>28</th>
-                                <th>35</th>
-                                <th>42</th>
-                                <th>50</th>
-                                <th>55</th>
-                                <th>63</th>
-                                <th>71</th>
-                                <th>78</th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
                                 <th></th>
                                 <th></th>
                                 <th></th>
