@@ -1,0 +1,63 @@
+table{
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 2rem;
+}
+
+table caption{
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+main table, main table td, main table th{
+    padding: 5px;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+main table thead th, main table tfoot th{
+    background-color: grey;
+}
+
+.table-container-scrollable{
+    display: flex;
+    flex-direction: column-reverse;
+    flex: 1;
+    min-width: 0;
+    width: 100%;
+}
+
+.table-container-scrollable .table-container, .chosen-lineup-scrollable{
+    overflow-x: auto;
+}
+
+/* --- Ajout pour la sélection de colonne --- */
+
+/* Curseur main pour indiquer qu'on peut cliquer sur les cellules */
+table .clickable {
+    cursor: pointer;
+}
+
+/* --- L'EN-TÊTE SÉLECTIONNÉ (Vert foncé) --- */
+/* On utilise !important pour être sûr d'écraser le "grey" de votre CSS de base */
+table thead th.selected-col,
+table tfoot th.selected-col,
+table thead th.col-selected,
+table tfoot th.col-selected{
+    background-color: #4CAF50 !important; /* Vert */
+    color: white;
+    border-color: #388E3C;
+}
+
+/* --- LES CELLULES SÉLECTIONNÉES (Vert clair) --- */
+table tbody td.selected-col,
+table tfoot td.selected-col,
+table tbody td.col-selected,
+table tfoot td.col-selected {
+    background-color: #98FB98 !important; /* Vert clair */
+    color: black;
+    font-weight: bold;
+    /* Bordures vertes pour encadrer la sélection */
+    border-left: 2px solid #4CAF50;
+    border-right: 2px solid #4CAF50;
+}
