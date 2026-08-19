@@ -18,10 +18,16 @@ import Norway from "./pages/teams/database/Norway";
 import Mexico from "./pages/teams/database/Mexico";
 import UnitedStates from "./pages/teams/database/UnitedStates";
 
+// Importer la page de génération de compos ainsi que sa customisation
+import Lineup from "./pages/Lineup";
+
 // Importer nos fichiers de style
 import "./styles/Header.css";
 import "./styles/Footer.css";
+
 import "./styles/Card.css";
+import "./styles/Lineup.css";
+
 import "./styles/index.css";
 
 function App() {
@@ -30,8 +36,8 @@ function App() {
             <Router>
                 {/* Ajouter le header contenant le menu responsive */}
                 <Header />
-                {/* Ajouter nos pages d'équipes */}
                 <Routes>
+                    {/* Ajouter nos pages d'équipes */}
                     <Route path="/card/teams/database/portugal" element={<Portugal />} />
                     <Route path="/card/teams/database/brazil" element={<Brazil />} />
                     <Route path="/card/teams/database/france" element={<France />} />
@@ -42,6 +48,9 @@ function App() {
                     <Route path="/card/teams/database/united-states" element={<UnitedStates />} />
                     <Route path="/card/teams/database/mexico" element={<Mexico />} />
                     <Route path="/card/teams/database/norway" element={<Norway />} />
+                    
+                    {/* Ajouter notre page qui va nous permettre de générer nos compos possibles */}
+                    <Route path="/lineup" element={<Lineup />} />
                 </Routes>
                 {/* Ajouter notre footer contenant nos contacts */}
                 <Footer/>
