@@ -44,7 +44,7 @@ function Lineup() {
         <main>
             <div className='header-lineup'>
                 <h1>Lineups</h1>
-                <button style={{fontSize: '20px', backgroundColor: 'red', border: 'none', padding: '10px 20px', borderRadius: '5px', color: 'white', float: 'right'}} onClick={handleReset}>Reset All</button> 
+                <button style={{cursor: 'pointer', fontSize: '20px', backgroundColor: 'red', border: 'none', padding: '10px 20px', borderRadius: '5px', color: 'white', float: 'right'}} onClick={handleReset}>Reset All</button> 
             </div>
 
             {/* Afficher les cartes */}

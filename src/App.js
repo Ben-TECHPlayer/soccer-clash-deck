@@ -1,6 +1,7 @@
 // Importer React ainsi que ses routeurs
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { LevelProvider } from "./context/LevelContext";
 
 // Importer nos composants
 import Header from "./components/Header";
@@ -32,30 +33,32 @@ import "./styles/index.css";
 
 function App() {
     return (
-        <div className="App">
-            <Router>
-                {/* Ajouter le header contenant le menu responsive */}
-                <Header />
-                <Routes>
-                    {/* Ajouter nos pages d'équipes */}
-                    <Route path="/card/teams/database/portugal" element={<Portugal />} />
-                    <Route path="/card/teams/database/brazil" element={<Brazil />} />
-                    <Route path="/card/teams/database/france" element={<France />} />
-                    <Route path="/card/teams/database/argentine" element={<Argentine />} />
-                    <Route path="/card/teams/database/spain" element={<Spain />} />
-                    <Route path="/card/teams/database/germany" element={<Germany />} />
-                    <Route path="/card/teams/database/england" element={<England />} />
-                    <Route path="/card/teams/database/united-states" element={<UnitedStates />} />
-                    <Route path="/card/teams/database/mexico" element={<Mexico />} />
-                    <Route path="/card/teams/database/norway" element={<Norway />} />
-                    
-                    {/* Ajouter notre page qui va nous permettre de générer nos compos possibles */}
-                    <Route path="/lineup" element={<Lineup />} />
-                </Routes>
-                {/* Ajouter notre footer contenant nos contacts */}
-                <Footer/>
-            </Router>
-        </div>
+        <LevelProvider>
+            <div className="App">
+                <Router>
+                    {/* Ajouter le header contenant le menu responsive */}
+                    <Header />
+                    <Routes>
+                        {/* Ajouter nos pages d'équipes */}
+                        <Route path="/card/teams/database/portugal" element={<Portugal />} />
+                        <Route path="/card/teams/database/brazil" element={<Brazil />} />
+                        <Route path="/card/teams/database/france" element={<France />} />
+                        <Route path="/card/teams/database/argentine" element={<Argentine />} />
+                        <Route path="/card/teams/database/spain" element={<Spain />} />
+                        <Route path="/card/teams/database/germany" element={<Germany />} />
+                        <Route path="/card/teams/database/england" element={<England />} />
+                        <Route path="/card/teams/database/united-states" element={<UnitedStates />} />
+                        <Route path="/card/teams/database/mexico" element={<Mexico />} />
+                        <Route path="/card/teams/database/norway" element={<Norway />} />
+                        
+                        {/* Ajouter notre page qui va nous permettre de générer nos compos possibles */}
+                        <Route path="/lineup" element={<Lineup />} />
+                    </Routes>
+                    {/* Ajouter notre footer contenant nos contacts */}
+                    <Footer/>
+                </Router>
+            </div>
+        </LevelProvider>
     );
 }
 
